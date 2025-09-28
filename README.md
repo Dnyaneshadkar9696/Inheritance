@@ -1,22 +1,44 @@
-# Java Inheritance Example
+# Java Inheritance Examples
 
-This repository demonstrates **Inheritance** - one of the four fundamental principles of Object-Oriented Programming in Java.
+This repository demonstrates **Inheritance** - one of the four fundamental principles of Object-Oriented Programming in Java, with comprehensive examples of all types of inheritance supported by Java.
 
 ## What is Inheritance?
 
 Inheritance is a mechanism where a new class (child/subclass) inherits properties and methods from an existing class (parent/superclass). It promotes code reusability and establishes a relationship between classes.
 
-## Code Structure
+## Repository Contents
 
-### Class A (Parent Class)
-- Contains `protected` variables `a` and `b`
-- Has a `show()` method that calculates and displays the sum
+This repository contains comprehensive examples of all inheritance types supported in Java:
 
-### Class B (Child Class)
-- **Extends** Class A (inherits all protected and public members)
-- Can access inherited variables `a` and `b`
-- Has its own `display()` method
-- Can call inherited methods
+### 📁 Files Overview
+
+1. **`Inheritance.java`** - Basic inheritance example (Class A and Class B)
+2. **`SingleInheritance.java`** - Single inheritance with Vehicle and Car classes
+3. **`MultilevelInheritance.java`** - Multilevel inheritance chain: LivingBeing → Animal → Dog
+4. **`HierarchicalInheritance.java`** - Multiple classes inheriting from Shape class
+5. **`InheritanceTypes.java`** - Comprehensive example showing all inheritance types
+
+## Types of Inheritance in Java
+
+### ✅ Supported Types:
+
+#### 1. **Single Inheritance** (`SingleInheritance.java`)
+- One child class extends one parent class
+- Example: `Car extends Vehicle`
+
+#### 2. **Multilevel Inheritance** (`MultilevelInheritance.java`)  
+- Chain of inheritance: Grandparent → Parent → Child
+- Example: `Dog extends Animal extends LivingBeing`
+
+#### 3. **Hierarchical Inheritance** (`HierarchicalInheritance.java`)
+- Multiple classes inherit from the same parent
+- Example: `Circle, Rectangle, Triangle, Square all extend Shape`
+
+### ❌ Not Supported:
+- **Multiple Inheritance** with classes (Diamond Problem)
+- **Hybrid Inheritance** (due to multiple inheritance limitation)
+
+*Note: Java supports multiple inheritance through interfaces*
 
 ## Key Concepts Demonstrated
 
@@ -47,19 +69,36 @@ objB.show();        // Calling inherited method
 | `protected` | ✅ | ✅ | ✅ | ❌ |
 | `public` | ✅ | ✅ | ✅ | ✅ |
 
-## How to Run
+## How to Run Each Example
 
-1. Compile the Java file:
-   ```bash
-   javac Inheritance.java
-   ```
+### Basic Inheritance:
+```bash
+javac Inheritance.java && java Inheritance
+```
 
-2. Run the program:
-   ```bash
-   java Inheritance
-   ```
+### Single Inheritance:
+```bash
+javac SingleInheritance.java && java SingleInheritance
+```
 
-## Expected Output
+### Multilevel Inheritance:
+```bash
+javac MultilevelInheritance.java && java MultilevelInheritance
+```
+
+### Hierarchical Inheritance:
+```bash
+javac HierarchicalInheritance.java && java HierarchicalInheritance
+```
+
+### All Types Combined:
+```bash
+javac InheritanceTypes.java && java InheritanceTypes
+```
+
+## Example Outputs
+
+### Basic Inheritance Output:
 
 ```
 === Inheritance Example ===
